@@ -35,6 +35,7 @@
             @endforeach
             </tbody>
         </table>
+        {{ $todo_list->links() }}
     </div>
 </div>
 
