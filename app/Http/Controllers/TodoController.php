@@ -70,7 +70,8 @@ class TodoController extends Controller
      */
     public function edit($id)
     {
-        //
+        $todo = Auth::user()->todos()->findOrFail($id);
+        return view('todo/edit', compact('todo'));
     }
 
     /**
