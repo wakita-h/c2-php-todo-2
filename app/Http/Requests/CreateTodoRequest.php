@@ -25,7 +25,7 @@ class CreateTodoRequest extends FormRequest
     {
         return [
             'title' => 'required',
-            'due_date' => 'required|date_format:Y/m/d',
+            'due_date' => 'required|date_format:Y-m-d',
         ];
     }
 }
