@@ -10,8 +10,9 @@
             <table class="table">
                 <thead>
                 <tr>
-                    <th width="50%">タイトル</th>
+                    <th width="35%">タイトル</th>
                     <th width="20%">期限</th>
+                    <th width="15%">状態</th>
                     <th width="15%"></th>
                     <th width="15%"></th>
                 </tr>
@@ -24,6 +25,7 @@
                                 {{ $todo->title }}
                             </a>
                         </td>
+                        <td>{{ \App\Todo::STATUS[$todo->status] }}</td>
                         <td>{{ $todo->due_date }}</td>
                         <th>
                             <a href="/todo/{{ $todo->id }}/edit" class="btn btn-success"><i class="fas fa-edit mr-2"></i>編集</a>
