@@ -15,7 +15,7 @@
             <tbody>
             <tr>
                 <td>{{ $todo->title }}</td>
-                <td>{{ \App\Todo::STATUS[$todo->status] }}</td>
+                <td>{{ $todo->getStatusText() }}</td>
                 <td>{{ $todo->due_date }}</td>
             </tr>
             </tbody>

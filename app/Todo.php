@@ -15,4 +15,18 @@ class Todo extends Model
     ];
 
     protected $fillable = ['title', 'due_date', 'status'];
+
+    /**
+     * 状態の表示テキストを返す
+     *
+     * @return string
+     */
+    public function getStatusText(): string
+    {
+        if (empty(self::STATUS[$this->status])) {
+            return  "";
+        }
+
+        return self::STATUS[$this->status];
+    }
 }
