@@ -28,4 +28,9 @@ class Todo extends Model
 
         return self::STATUS[$this->status];
     }
+
+    public function getDisplayData(): string
+    {
+        
+    }
 }
