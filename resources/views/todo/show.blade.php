@@ -14,7 +14,7 @@
             </thead>
             <tbody>
             <tr>
-                <td  style="width: 300px">{{ $todo->title }}</td>
+                <td  style="width: 350px">{{ $todo->title }}</td>
                 <td>{{ $todo->due_date }}</td>
                 <td>{{ $todo->getStatusText() }}</td>
             </tr>
